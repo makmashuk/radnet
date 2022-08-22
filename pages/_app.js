@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import MainLayout from "@components/layouts/MainLayout";
+import { BreadcrumbProvider } from "@contexts/BreadcrumbContext";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <BreadcrumbProvider>
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </BreadcrumbProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
