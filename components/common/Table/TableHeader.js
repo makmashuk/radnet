@@ -89,7 +89,7 @@ export default function TableHeaderRow({ columns, rows, selected, sortableFields
               >
                 {item.box && item.box}
                 {item.title}
-                {handleIconForSortable(item)}
+                <span style={{ flexShrink: 0 }}>{handleIconForSortable(item)}</span>
               </div>
             </th>
           );

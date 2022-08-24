@@ -14,20 +14,18 @@ export default function ProgressLineSingle(props) {
   const [heightOfElement, setHeightOfElement] = useState("8px");
 
   useEffect(() => {
-    requestAnimationFrame(() => {
-      setWidthOfElement(props.width + "%");
-      if (props.size === "medium") {
-        setHeightOfElement("20px");
-      }
-    });
+    setWidthOfElement(props.width + "%");
+    if (props.size === "medium") {
+      setHeightOfElement("0.75rem");
+    }
   }, [props]);
 
   const progressTypeVertical = (
     <div style={containerStyleTypeOne}>
       <div style={labelStyleTypeOne}>
-        <div> {props.label}</div>
+        <span className="text-primary-400">{props.label}</span>
         <div>
-          <strong>{widthOfElement}</strong>{" "}
+          <span className="fw-semi-bold">{widthOfElement}</span>
         </div>
       </div>
       <div
@@ -35,6 +33,7 @@ export default function ProgressLineSingle(props) {
           backgroundColor: "#EFEFEF",
           height: heightOfElement,
           margin: "10px 0",
+          borderRadius: "0 8px 8px 0",
         }}
       >
         <div
@@ -43,7 +42,7 @@ export default function ProgressLineSingle(props) {
             backgroundColor: "#3A3A3A",
             opacity: 1,
             height: heightOfElement,
-            borderRadius: "0 4px 4px 0 ",
+            borderRadius: "0 8px 8px 0 ",
             transition: "width 2s",
           }}
         ></div>

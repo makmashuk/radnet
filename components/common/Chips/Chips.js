@@ -14,12 +14,11 @@ const ChipsContainer = ({ chips, setChips }) => {
     <>
       {chips.length > 0 ? (
         <div style={{ gap: "1rem" }} className="d--f fw--w ai--c">
-          <span>Filters: </span>
           {chips.map((chip) => (
             <div
               key={chip.key}
-              style={{ background: "#e7e7e7", padding: "0.25rem 0.75rem", gap: "0.5rem" }}
-              className="d--f jc--c ai--c br--2 fw-semi-bold"
+              style={{ background: "#e7e7e7", padding: "0.5rem 0.75rem", gap: "1.25rem" }}
+              className="d--f jc--c ai--c br--1 fw-semi-bold fs-300 text-primary-300"
             >
               <span>{chip.title}</span>
               <button className={styles.btn__close} onClick={() => deleteOne(chip.key)}>

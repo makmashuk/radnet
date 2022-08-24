@@ -1,7 +1,3 @@
-.breadcrumb {
-  padding-top: var(--size-400);
-}
-
 .breadcrumb li a {
   text-decoration: none;
 }

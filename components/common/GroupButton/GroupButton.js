@@ -16,11 +16,7 @@ const GroupButton = ({ buttons, buttonOnClickHandler }) => {
           key={i}
           name={buttonLabel}
           onClick={(event) => handleClick(event, i)}
-          className={
-            i === clickedId
-              ? `${styles.button} ${styles.active}`
-              : styles.button
-          }
+          className={i === clickedId ? `${styles.button} ${styles.active}` : styles.button}
         >
           {buttonLabel}
         </button>
