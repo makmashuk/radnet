@@ -1,8 +1,0 @@
-name: SeigePipeline
-
-on:
-  push:
-    branches: [main]
-
-jobs:
-  
