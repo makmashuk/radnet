@@ -8,7 +8,8 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   basePath:'/radnet',
-  assetPrefix:'/'
+  assetPrefix:'/',
+  distDir: 'build'
 }
 
 module.exports = nextConfig
