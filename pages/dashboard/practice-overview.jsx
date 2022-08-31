@@ -3,7 +3,8 @@ import Breadcrumb from "@components/common/Breadcrumb/Breadcrumb";
 import Modal from "@components/common/Modal/Modal";
 import { useEffect, useMemo, useState } from "react";
 import { setBreadcrumb } from "@reducers/BreadcrumbReducer";
-import usePracticeOverView from "@components/pages/dashboard/practiceOverview/PracticeOverviewController";
+import usePracticeOverView from "../../components/pages/dashboard/practiceOverview/PracticeOverviewController";
+
 import FilterButton from "../../components/common/FilterButton/FilterButton";
 import POSummaryCards from "../../components/pages/dashboard/practiceOverview/POSummaryCards";
 import POViews from "../../components/pages/dashboard/practiceOverview/POViews";
