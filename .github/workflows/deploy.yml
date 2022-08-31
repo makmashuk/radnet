@@ -27,7 +27,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build && npm run export
-    - run: touch ./out/.nojekyll
+    - run: touch ./out/.nojekyll && echo 'makmashuk.github.io' > ./out/CNAME"
     
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
