@@ -9,7 +9,7 @@ const nextConfig = {
   },
   basePath:'/radnet',
   assetPrefix:'/',
-  distDir: 'build'
+  // distDir: 'build'
 }
 
 module.exports = nextConfig
