@@ -7,6 +7,8 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  basePath:'/',
+  assetPrefix:'/'
 }
 
 module.exports = nextConfig
