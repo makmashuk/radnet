@@ -7,7 +7,7 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-  basePath:'https://makmashuk.github.io/radnet/',
+  basePath:'makmashuk.github.io/radnet/',
   assetPrefix:'/'
 }
 
