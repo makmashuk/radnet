@@ -1,10 +1,11 @@
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { BiHome } from "react-icons/bi";
 
 const SIDEBAR_LINKS = [
   {
     id: "46f7dc9b-e75d-40e0-8d14-1e7334d16d5e",
-    link: "/",
+    link: "/dashboard/practice-overview",
     title: "Home",
     icon: "",
   },
@@ -29,7 +30,13 @@ const SIDEBAR_LINKS = [
 ];
 
 export default function SideBar() {
+  const router = useRouter();
   const [activeLink, setActiveLink] = useState("46f7dc9b-e75d-40e0-8d14-1e7334d16d5e");
+  const handleActiveRoute = (link) => {
+    console.log(link);
+    setActiveLink(link.id);
+    router.push(link.link);
+  }
   return (
     <nav
       style={{
@@ -44,7 +51,7 @@ export default function SideBar() {
         <div
           key={link.id}
           className={`sidebar__link ${activeLink === link.id ? "active" : null}`}
-          onClick={() => setActiveLink(link.id)}
+          onClick={() => handleActiveRoute(link)}
         >
           <div className="triangle1"></div>
 
