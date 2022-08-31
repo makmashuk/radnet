@@ -76,7 +76,7 @@ export default function PracticeOverViewPage() {
 
         <div className="columns" style={{ "--gap": "1rem" }}>
           <div className="card">
-            <POPositioningIssues />
+            {/* <POPositioningIssues /> */}
           </div>
 
           <div className="card" style={{ "--flex": 2 }}>

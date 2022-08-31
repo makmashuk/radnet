@@ -1,4 +1,4 @@
-import ProgressLineSingle from "../../../common/progressLineSingle";
+import ProgressLineSingle from "../../../common/ProgressLineSingle";
 
 export default function POPositioningIssues() {
   return (
